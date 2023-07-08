@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        @font-face {
+            font-family: Alexandria;
+            src: url("fonts/Alexandria-VariableFont_wght.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Alexandria;    
+            direction: rtl;
+            height: 100vh;
+        }
+        .fixed-search {
+            position: fixed;
+            top: 0px;
+            z-index: 999999999999999;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.09), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        .fixed-search p{
+            margin-bottom: 0px;
+        }
+        .container ,.row{
+            height: 100px;
+        }
+        .card-service {
+            box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.01), 0px 4px 2px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .card-img img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .num {
+            padding-right: 3px;
+            color: #FCB354;
+            font-weight: 400;
+            font-size: 12px;
+        }
+        .card-title {
+            font-weight: 400;
+            font-size: 12px;
+            padding-top: 10px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-weight: 300;
+            font-size: 12px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+            .date {
+            color: #EE8454;
+            font-weight: 400;
+            font-size: 14px;
+            padding-left: 3px;
+            margin-top: 25px;
+        }
+        .order h3{
+            font-weight: 400;
+            font-size: 18px;
+            color: #0F0F0F;
+            margin-bottom: 20px;
+        }
+        .price, .total{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+        }
+        .price p, .total p{
+            font-weight: 400;
+            font-size: 15px;
+            color: rgba(15, 15, 15, 0.5);
+        }
+        .form-title h3{
+            font-weight: 400;
+                font-size: 18px;
+                color: #0F0F0F;
+                margin-bottom: 20px;
+        }
+        .form-title ul{
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .form-title ul li{
+            font-weight: 400;
+            font-size: 15px;
+            color: rgba(15, 15, 15, 0.5);
+            list-style-type: none;
+        }
+        textarea{
+            border: 1.5px solid rgba(15, 15, 15, 0.1);
+            width: 100%;
+            border-radius: 15px;
+            outline: none;
+            padding: 20px;
+        }
+        button[type="submit"] {
+            background: #EE8454 !important;
+            border-radius: 100px;
+            border: 1.5px solid rgba(15, 15, 15, 0.10);
+            color: #fff !important;
+            width: 350px;
+            height: 50px;
+            margin: 100px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-search d-flex justify-content-between align-items-center">
+         <p>تفاصيل الطلب</p>
+        <a href="" style="float:left"><img src="images/solar_square-arrow-left-broken.png" width="20px" height="20px"></a>
+    </div>
+
+    <div class="wrapper " style="padding-top: 90px;">
+        <div class="container">
+            <div class="row">
+
+                    <div class="reverse-card mb-5">
+                        <div class="card-service d-flex">
+                            <div class="card-img" style="flex-basis:45%;">
+                                <img src="images/Rectangle 88.png" width="100%" height="170px" alt="">
+                            </div>
+                            <div class="card-data me-3" style="flex-basis:55%;">
+                                <p class="num">4.5</p>
+                                <h3 class="card-title">ساكتب لك قصيدة بالشعر الفصيح</h3>
+                                <p class="card-text">الشاعر محمد احمد ابراهيم</p>
+                                <p class="date">12<span>أبريل</span></p>
+                        </div>
+                        </div>
+                    </div>
+                 <hr>
+                 <div class="order">
+                    <h3>ملخص الطلب</h3>
+                     <div class="price">
+                        <p>سعر الخدمة</p>
+                        <p>120 ريال</p>
+                     </div>
+                     <div class="total">
+                        <p>الاجمالي</p>
+                        <p>120 ريال</p>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="form-title">
+                    <h3>تعليمات الشاعر</h3>
+                    <ul>
+                        <li>ادخل تفاصيل طلبك للشاعر</li>
+                        <li>يرجي تحديد المناسبه المراد الشعر لها .</li>
+                        <li>التعديل لمرة واحده على القصيدة . </li>
+                        <li>يرجي كتابه كافه الملاحظات قبل البدء فى طلب الخدمة</li>
+                    </ul>
+                 </div>
+                 <hr>
+                 <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="ادخل تفاصيل طلبك للشاعر ك/ اريد الشعر لمناسبة "></textarea>
+                    <button type="submit" class="btn w-100">استكمال الدفع</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+</body>
+</html>
